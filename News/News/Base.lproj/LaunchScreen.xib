@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hello" translatesAutoresizingMaskIntoConstraints="NO" id="PZg-3Q-qmV"/>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="PZg-3Q-qmV" secondAttribute="bottom" id="7G6-IX-pLC"/>
+                <constraint firstItem="PZg-3Q-qmV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="BTy-yl-xgD"/>
+                <constraint firstAttribute="trailing" secondItem="PZg-3Q-qmV" secondAttribute="trailing" id="CKQ-7u-ia5"/>
+                <constraint firstItem="PZg-3Q-qmV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="CrQ-9Y-d4x"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="547.5" y="454.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="hello" width="1080" height="1920"/>
+    </resources>
+</document>

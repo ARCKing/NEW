@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ChatView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bRk-tc-fXz">
+                    <rect key="frame" x="8" y="8" width="359" height="143"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="143" id="beD-jW-3kN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sBY-A7-wNd">
+                    <rect key="frame" x="8" y="159" width="50" height="30"/>
+                    <color key="backgroundColor" red="0.8862745098" green="0.8862745098" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="PyM-5o-foa"/>
+                        <constraint firstAttribute="height" constant="30" id="sVl-tK-1IP"/>
+                    </constraints>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请文明用语，遵守评论规则。优质评论将会优先展示哦....." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5DK-Kh-eJP">
+                    <rect key="frame" x="14" y="14" width="345" height="36"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zLi-Vc-onF">
+                    <rect key="frame" x="317" y="159" width="50" height="30"/>
+                    <color key="backgroundColor" red="0.47058823529411764" green="0.78823529411764703" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="55f-PO-lAH"/>
+                        <constraint firstAttribute="height" constant="30" id="Njr-Dn-tDR"/>
+                    </constraints>
+                    <state key="normal" title="发表">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="bRk-tc-fXz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="5kt-Rk-8rc"/>
+                <constraint firstItem="sBY-A7-wNd" firstAttribute="top" secondItem="bRk-tc-fXz" secondAttribute="bottom" constant="8" id="NG2-33-WV9"/>
+                <constraint firstAttribute="trailing" secondItem="zLi-Vc-onF" secondAttribute="trailing" constant="8" id="NJr-zt-30h"/>
+                <constraint firstItem="bRk-tc-fXz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="Nvv-8V-Fxf"/>
+                <constraint firstItem="5DK-Kh-eJP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="14" id="ZvM-tA-lka"/>
+                <constraint firstItem="5DK-Kh-eJP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="14" id="dwZ-ts-EsC"/>
+                <constraint firstItem="zLi-Vc-onF" firstAttribute="top" relation="greaterThanOrEqual" secondItem="5DK-Kh-eJP" secondAttribute="bottom" constant="109" id="tny-vu-XgA"/>
+                <constraint firstItem="zLi-Vc-onF" firstAttribute="top" secondItem="bRk-tc-fXz" secondAttribute="bottom" constant="8" id="uRF-xs-0SX"/>
+                <constraint firstAttribute="trailing" secondItem="bRk-tc-fXz" secondAttribute="trailing" constant="8" id="uhi-wM-LDW"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="5DK-Kh-eJP" secondAttribute="trailing" constant="16" id="wbt-9b-mvA"/>
+                <constraint firstItem="sBY-A7-wNd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="yOV-ms-1nB"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="MYTextView" destination="bRk-tc-fXz" id="1so-Wp-mdu"/>
+                <outlet property="cancelBtn" destination="sBY-A7-wNd" id="C8k-lx-Uce"/>
+                <outlet property="placeLabel" destination="5DK-Kh-eJP" id="LxV-Xr-6d8"/>
+                <outlet property="publishedBtn" destination="zLi-Vc-onF" id="fmX-5M-p6Y"/>
+            </connections>
+            <point key="canvasLocation" x="180.5" y="111"/>
+        </view>
+    </objects>
+</document>
